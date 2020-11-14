@@ -1,13 +1,12 @@
 <template>
-  <view>
-    index≈
-  </view>
+<view>
+  cart
+</view>
 </template>
 
 <script>
 export default {
-  name: "index",
-
+name: "cart"
 }
 </script>
 

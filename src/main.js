@@ -6,6 +6,13 @@ Vue.config.productionTip = false
 App.mpType = 'app'
 
 const app = new Vue({
-  ...App
+    ...App
 })
 app.$mount()
+let bestUrl = "http://localhost:8080/renren-fast";
+Vue.prototype.url = {
+    "wxLogin": bestUrl + "/app/wx/login",
+    "searchUserOrderList": bestUrl + "/app/order/searchUserOrderList",
+    "microAppPayOrder": bestUrl + "/app/wx/microAppPayOrder",
+    "updateOrderStatus": bestUrl + "/app/wx/updateOrderStatus"
+}
